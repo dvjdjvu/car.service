@@ -1,5 +1,5 @@
 [Unit]
-Description=MyUnit
+Description=MobileCar
 After=syslog.target
 After=network.target
 
