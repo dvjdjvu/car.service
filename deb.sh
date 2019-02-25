@@ -1,17 +1,15 @@
+#!/bin/bash
+
 DEB=deb
 BUILD_DIR=.
 
-PATH=$DEB/usr/lib/systemd/system/
+PATH_DEB=$DEB/usr/lib/systemd/system/
 
 chmod 755 $DEB/*
 
-rm -r $PATH
-mkdir -p $PATH
+rm -r $PATH_DEB
+mkdir -p $PATH_DEB
 
-cp -r --parents car.service $PATH/
+cp -r --parents car.service $PATH_DEB/
 
 dpkg-deb --build $DEB $BUILD_DIR
-
-
-
-
