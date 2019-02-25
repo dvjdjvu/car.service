@@ -1,0 +1,6 @@
+Package: car-service
+Version: 1.0.0
+Section: base
+Architecture: all
+Maintainer: Sergeev Dmitry <djvu@inbox.ru>
+Description: Car mobile server service.
